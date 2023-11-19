@@ -1,0 +1,78 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: sans-serif;
+    background-image: url("./fortune-img.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.submit{
+    cursor: pointer;
+    background-color: rgb(88, 130, 214);
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 30px;
+    display: block;
+    transition: 0.3s;
+    border: 1px solid rgb(88, 130, 214);
+}
+
+.submit.active{
+    display: none;
+}
+
+.reset{
+    cursor: pointer;
+    background-color: rgb(88, 130, 214);
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 30px;
+    display: none;
+    transition: 0.3s;
+    border: 1px solid rgb(88, 130, 214);
+}
+
+.reset.active{
+    display: block;
+}
+
+.submit:hover, .reset:hover{
+    color: white;
+    background-color: transparent;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.5);
+}
+
+#answer{
+    margin-bottom: 50px;
+    font-size: 40px;
+    color: white;
+    text-shadow: 3px 2px 3px black;
+    text-align: center;
+}
+
+.title{
+    margin-bottom: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 45px;
+    color: white;
+    text-shadow: 3px 2px 3px black;
+    text-align: center;
+}
